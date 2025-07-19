@@ -1,46 +1,105 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<title>First project</title>
+<head> 
+	<meta charset = "UTF-8">
+	<title>Kavish Piranav Devarajan | SEO Analyst, Web Developer & Video Editor – Coimbatore</title> 
 	<style>
-		.intro{
-			border-radius:50px;
-			padding:5px 5px ;
-			font-size:20px;
-			background-color:#ffffff;
-			color:#0d0d0d;
+		
+		header{
+			background-color:#2c3e50;
+		    	margin:-10px -10px 0px -10px;
+			padding-right:50px;
 		}
-		.intro:hover{
-			background-color:#0d0d0d;
-			color:#ffffff;
-			font-size:22px;
-			padding:10px 10px;
+		
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 40px;
+			
 		}
-		p{
-			color:#ffffff;
-			font-size: 24px;
+
+		.image {
+			height: 80px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 30px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px;
+			transition: 0.3s ease;
+		}
+
+		nav ul li a:hover {
+			font-size: 20px;
+			color: #1abc9c;
+		}
+		
+		.head{
 			text-align:center;
+			padding: 20px;
+			font-size:32px;
 		}
-		h1{
-			color:#ffffff;
-			font-size: 30px;
+		
+		.para{
+			text-align:left;
+			padding :20px;
+			margin:0 auto;
+			max-width:1600px;
+			width: 80%;
+			font-size:18px;
+		}
+		
+		.button{
 			text-align:center;
+			font-size:16px;
+			display:block;
+			margin:0 auto;
+			margin-top: 40px;
+			color:#1abc9c;
+			background-color:#FFFFFF;
+			border-radius:10px;
+			border-color:#1abc9c;
 		}
+		
+		.button:hover{
+			color:#FFFFFF;
+			background-color:#1abc9c;
+			font-size:18px;
+			border-color:#FFFFFF
+		}
+		
+		
 	</style>
 </head>
 <body>
-	<h1>Dear User,</h1>
-	<p>    Thank you for visiting this website.</p>
-	<style>
-		body {
-			background-image:url("Untitled design (1).png");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	</style>
+	<header>
+		<nav>
+			<img src="logo.webp" alt="Kavish Logo" class="image">
+			<ul>	
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="contact us.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1 class="head">Hi, I’m Kavish Piranav Devarajan</h1>
+		<p class ="para">&nbsp;&nbsp;&nbsp; Welcome to my professional portfolio. I specialize in optimizing digital content, building responsive websites, editing compelling videos, and producing clean, fast-typing documents. I’m currently pursuing a B.Sc. in Computer Science at PSG Institute of Advanced Studies in Coimbatore.</p>
+		<button class="button"><b>Let's Connect</b></button>
+	</main>
+	<footer>
+	</footer>
 </body>
-<div style="text-align:center;">
-	<a class="intro" href="contact us.html">Click Here</a>
-</div>
 </html>
