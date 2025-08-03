@@ -4,40 +4,117 @@
 	<meta charset = "UTF-8">
 	<title>Kavish Piranav Devarajan | SEO Analyst, Web Developer & Video Editor – Coimbatore</title> 
 	<meta name="description" content="Explore the professional portfolio of Kavish Piranav Devarajan – a skilled SEO Analyst, Web Developer, and Video Editor based in Coimbatore. Connect today to collaborate!">
-	<link rel ="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-</head>
-<body style="margin:0px;">
-	<header>
-		<nav>
-			<img src="hf/logo.webp" alt="Kavish Logo" style="height:80px;">
-			<ul class="hlmenu">	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<nav class="menu-mobile">
-			<button id="menu-toggle">☰</button>
-			<ul id="mobile-menu-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const toggleBtn = document.getElementById('menu-toggle');
-				const menuList = document.getElementById('mobile-menu-list');
+	<style>
+		
+		header{
+			background-color:#2c3e50;
+		    margin:-10px -10px 0px -10px;
+			padding-right:50px;
+		}
+		
+		footer{
+			background-color:#2c3e50;
+		    margin:0px -10px -10px -10px;
+			padding-right:50px;
+		}
+		
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+		}
 
-			toggleBtn.addEventListener('click', function () {
-				menuList.classList.toggle('active');
-				});
-			});
-		</script>
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 30px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px;
+			transition: 0.3s ease;
+		}
+
+		nav ul li a:hover {
+			font-size: 20px;
+			color: #1abc9c;
+		}
+		
+		.ftext {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			margin-left:150px;
+			margin-bottom: 15px; 
+			letter-spacing: 1px;
+			display: inline-block;
+			transition: 0.3s ease;
+	}
+		.ltext{
+			color:white;
+			text-decoration:none;
+			display:inline-block;
+			transition:0.3s ease;
+			padding:10px 0px;
+		}
+		
+		.head{
+			text-align:center;
+			padding: 20px;
+			font-size:32px;
+		}
+		
+		.para{
+			text-align:left;
+			padding :20px;
+			margin:0 auto;
+			max-width:1600px;
+			width: 80%;
+			font-size:18px;
+		}
+		
+		.button {
+			display: inline-block;
+			text-align: center;
+			font-size: 16px;
+			margin: 40px auto;
+			padding: 12px 30px;
+			color: #1abc9c;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			border: 2px solid #1abc9c;
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+		
+		.button:hover{
+			color:#FFFFFF;
+			background-color:#1abc9c;
+			font-size:18px;
+			border-color:#FFFFFF
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<header>
+		<nav style="padding:10px 40px;">
+			<img src="hf/logo.webp" alt="Kavish Logo" style="height:80px;">
+			<ul>	
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</nav>
 	</header>
 	<main>
 		<h1 class="head">Hi, I’m Kavish Piranav Devarajan</h1>
@@ -63,9 +140,9 @@
 			</div>		
 		</nav>
 	</main>
-	<footer>
-		<img src="hf/logo.webp" alt="Kavish Logo" style="height:200px;padding:30px;">
-		<div style="display:flex;flex-direction:column;padding:50px;">
+	<footer style="display:flex;justify-content:space-between;align-items:flex-start;padding:0px 60px;">
+		<img src="hf/logo.webp" alt="Kavish Logo" style="height:200px;padding:50px;">
+		<div style="display:flex;flex-direction:column;margin-top:70px;">
 			<ul style="list-style:none;padding:0;margin:0px;">	
 					<li><a href="index.html" class="ftext">Home</a></li>
 					<li><a href="about.html"class="ftext">About Me</a></li>
@@ -73,21 +150,20 @@
 					<li><a href="contact.html"class="ftext">Contact</a></li>
 			</ul>
 		</div>
-		<div style="padding:40px;">
+		<div style="margin-top:40px;">
 			<ul style="list-style:none;">
 				<li><h3 class="ftext"><b>Latest blogs</b></h3></li>
 				<li><p class="ftext" style="margin-top:-10px;">Posted Soon...</p></li>
 			</ul>
 		</div>
-		<div style="padding:30px 100px;">
+		<div style="margin:20px 0px 0px 160px;">
 			<ul style="list-style:none;">
-				<li><a href ="mailto:kavishpiranav@gmail.com" class="ltext"><img src="hf/gmail.webp" alt="gmail" style="height:30px; padding:0px 5px;">EMail</a></li>
-				<li><a href ="https://in.linkedin.com/in/kavish-piranav-devarajan-794aa7321" class="ltext"><img src="hf/linkedin.png" alt="linkedin" style="height:30px; padding:0px 5px;">Linked In</a></li>
-				<li><a href ="tel:+917418799832" class="ltext"><img src="hf/phone.webp" alt="phone" style="height:40px; padding:0px 5px;">Phone</a></li>
-				<li><a href ="https://www.instagram.com/_kavish_piranav_?igsh=ejMxc2c2YWRwa2sx" class="ltext"><img src="hf/insta.webp" alt="instagram" style="height:30px; padding:0px 5px;">Instagram</a></li>		
+				<li><a href ="https://in.linkedin.com/in/kavish-piranav-devarajan-794aa7321" class="ltext"><img src="hf/linkedin.png" alt="linkedin" style="height:30px; padding:0px 5px;">Kavish Piranav Devarajan</a></li>
+				<li><a href ="tel:+917418799832" class="ltext"><img src="hf/phone.webp" alt="phone" style="height:40px; padding:0px 5px;">+91-7418799832</a></li>
+				<li><a href ="https://www.instagram.com/_kavish_piranav_?igsh=ejMxc2c2YWRwa2sx" class="ltext"><img src="hf/insta.webp" alt="instagram" style="height:30px; padding:0px 5px;">_kavish_piranav_</a></li>		
+				<li><a href ="mailto:kavishpiranav@gmail.com" class="ltext"><img src="hf/gmail.webp" alt="gmail" style="height:30px; padding:0px 5px;">kavishpiranav@gmail.com</a></li>
 			</ul>
 		</div>
 	</footer>
 </body>
 </html>
-
