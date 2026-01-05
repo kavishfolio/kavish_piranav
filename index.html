@@ -4,20 +4,49 @@
 	<meta charset = "UTF-8">
 	<title>Kavish Piranav Devarajan | SEO Analyst, Web Developer & Video Editor – Coimbatore</title> 
 	<meta name="description" content="Explore the professional portfolio of Kavish Piranav Devarajan – a skilled SEO Analyst, Web Developer, and Video Editor based in Coimbatore. Connect today to collaborate!">
-	<link rel ="stylesheet" href="sb.css">
+	<link rel ="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<nav style="padding:10px 40px;">
-			<img src="hf\logo.webp" alt="Kavish Logo" style="height:80px;">
-			<ul>	
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-		</ul>
+		<nav class="h_nav">
+			<img src="hf\logo.webp" alt="Kavish Logo">
+			<div class="h_ul">
+				<ul>	
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="mbar" onclick="openmenu()">
+				<i class="fa fa-bars"></i>
+			</div>
 		</nav>
 	</header>
+	<div class="dropdown_menu" id="menu">
+		<ul>	
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<script>
+	var menu = document.getElementById("menu");
+	var isOpen = false;
+
+	function openmenu() {
+		if (isOpen === false) {
+			menu.style.width = "250px";
+			isOpen = true;
+		} else {
+			menu.style.width = "0px";
+			isOpen = false;
+		}
+	}
+	</script>
+
 	<main>
 		<h1 class="head">Hi, I’m Kavish Piranav Devarajan</h1>
 		<p class ="para">&nbsp;&nbsp;&nbsp; Welcome to my professional portfolio. I specialize in optimizing digital content, building responsive websites, editing compelling videos, and producing clean, fast-typing documents. I’m currently pursuing a B.S. in Computer Science at PSG Institute of Advanced Studies in Coimbatore.</p>
